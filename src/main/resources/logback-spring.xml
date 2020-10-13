@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+    <include resource="org/springframework/boot/logging/logback/defaults.xml"/>
+    <include resource="org/springframework/boot/logging/logback/console-appender.xml" />
+    <root level="INFO">
+        <appender-ref ref="CONSOLE" />
+    </root>
+    <logger name="com.seungmoo.springforeigncfg" level="DEBUG"/>
+</configuration>
+
+<!--logback.xml은 스프링 프로젝트 빌드 초반에 바로 적용되며, logback-spring.xml을 쓰도록 한다.
+log4j2를 쓴다면 log4j2-spring.xml 파일을 만들어서 쓰면됨-->
